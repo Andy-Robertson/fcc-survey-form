@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- CSS IMPORT -->
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+</head>
+
+<body>
+  <main>
+    <h1 id="title">Opensoft Feedback Form</h1>
+
+    <form id="survey-form" action="submit-form-here">
+
+      <p id="description"> We would be grateful if you will take a moment to let us know what you think of our software products, it enables us to make our products better for everyone and improve, we always value your feedback!</p>
+
+      <div id=input-container>
+        <label id="name-label" for="name">Full Name*</label>
+        <input id="name" type="text" placeholder="First" required>
+        <label id="surname-label" for="surname"></label>
+        <input id="surname" type="text" placeholder="Last" required>
+        <div>
+          <label id="email-label" for="email">Email*</label>
+          <input id="email" type="email" placeholder="@youremail.com" required>
+        </div>
+        <div>
+          <label id="number-label" for="number">Products Owned*</label>
+          <input id="number" type="number" min="0" max="6" placeholder="0/6" required>
+        </div>
+        <div>
+          <label id="dropdown-label" for="dropdown">Software Product</label>
+          <select id="dropdown">
+        <option value="option-default">Select</option>
+      <option value="option1">Open Compiler</option>
+      <option value="option2">Open Editor</option>
+      <option value="option3">Open Debug</option>
+      <option value="option4">Open IDE</option>
+      <option value="option5">Open Parser</option>
+      <option value="option6">Open Analyzer</option>
+    </select>
+        </div>
+      </div>
+
+      <div id="survey-radio-container">
+        <fieldset>
+          <legend>How satisfied are you with the software’s ease of use?</legend>
+
+          <label for="q1-radio-one">
+        <input id="q1-radio-one" type="radio" name="radio-buttons1" value="1">Extremely</label>
+
+          <label for="q1-radio-two">
+        <input id="q1-radio-two" type="radio" name="radio-buttons1" value="2">Very</label>
+
+          <label for="q1-radio-three">
+        <input id="q1-radio-three" type="radio" name="radio-buttons1" value="3">Somewhat</label>
+
+          <label for="q1-radio-four">
+        <input id="q1-radio-four" type="radio" name="radio-buttons1" value="4">Not Very</label>
+
+          <label for="q1-radio-five">
+        <input id="q1-radio-five" type="radio" name="radio-buttons1" value="5">Not at All</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>How satisfied are you with the software’s feature set?</legend>
+
+          <label for="q2-radio-one">
+        <input id="q2-radio-one" type="radio" name="radio-buttons2" value="1">Extremely</label>
+
+          <label for="q2-radio-two">
+        <input id="q2-radio-two" type="radio" name="radio-buttons2" value="2">Very</label>
+
+          <label for="q2-radio-three">
+        <input id="q2-radio-three" type="radio" name="radio-buttons2" value="3">Somewhat</label>
+
+          <label for="q2-radio-four">
+        <input id="q2-radio-four" type="radio" name="radio-buttons2" value="4">Not Very</label>
+
+          <label for="q2-radio-five">
+        <input id="q2-radio-five" type="radio" name="radio-buttons2" value="5">Not at All</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>How satisfied are you with the software’s tutorials?</legend>
+
+          <label for="q3-radio-one">
+        <input id="q3-radio-one" type="radio" name="radio-buttons3" value="1">Extremely</label>
+
+          <label for="q3-radio-two">
+        <input id="q3-radio-two" type="radio" name="radio-buttons3" value="2">Very</label>
+
+          <label for="q3-radio-three">
+        <input id="q3-radio-three" type="radio" name="radio-buttons3" value="3">Somewhat</label>
+
+          <label for="q3-radio-four">
+        <input id="q3-radio-four" type="radio" name="radio-buttons3" value="4">Not Very</label>
+
+          <label for="q3-radio-five">
+        <input id="q3-radio-five" type="radio" name="radio-buttons3" value="5">Not at All</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>How satisfied are you with the software’s look and feel?</legend>
+          <label for="q4-radio-one">
+        <input id="q4-radio-one" type="radio" name="radio-buttons4" value="1">Extremely</label>
+
+          <label for="q4-radio-two">
+        <input id="q4-radio-two" type="radio" name="radio-buttons4" value="2">Very</label>
+
+          <label for="q4-radio-three">
+        <input id="q4-radio-three" type="radio" name="radio-buttons4" value="3">Somewhat</label>
+
+          <label for="q4-radio-four">
+        <input id="q4-radio-four" type="radio" name="radio-buttons4" value="4">Not Very</label>
+
+          <label for="q4-radio-five">
+        <input id="q4-radio-five" type="radio" name="radio-buttons4" value="5">Not at All</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Are you satisfied with what you paid?</legend>
+          <label for="q5-radio-one">
+        <input id="q5-radio-one" type="radio" name="radio-buttons5" value="1">Extremely</label>
+
+          <label for="q5-radio-two">
+        <input id="q5-radio-two" type="radio" name="radio-buttons5" value="2">Very</label>
+          <label for="q5-radio-three">
+        <input id="q5-radio-three" type="radio" name="radio-buttons5" value="3">Somewhat</label>
+
+          <label for="q5-radio-four">
+        <input id="q5-radio-four" type="radio" name="radio-buttons5" value="4">Not Very</label>
+          <label for="q5-radio-five">
+        <input id="q5-radio-five" type="radio" name="radio-buttons5" value="5">Not at All</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Would you recommend this software?</legend>
+          <label for="q6-radio-one">
+        <input id="q6-radio-one" type="radio" name="radio-buttons5" value="1">Extremely</label>
+
+          <label for="q6-radio-two">
+        <input id="q6-radio-two" type="radio" name="radio-buttons5" value="2">Very</label>
+          <label for="q6-radio-three">
+        <input id="q6-radio-three" type="radio" name="radio-buttons5" value="3">Somewhat</label>
+          <label for="q6-radio-four">
+        <input id="q6-radio-four" type="radio" name="radio-buttons5" value="4">Not Very</label>
+
+          <label for="q6-radio-five">
+        <input id="q6-radio-five" type="radio" name="radio-buttons5" value="5">Not at All</label>
+        </fieldset>
+      </div>
+
+      <fieldset id="fieldset-checkbox">
+        <legend>What should we prioritise in future patches?</legend>
+        <div id="checkbox-Left">
+
+          <div>
+            <label for="check1-input" id="check1-label">
+          <input id="check1-input" type="checkbox" name="checkbox1" value="1">Loading speed</label>
+          </div>
+
+          <div>
+            <label for="check2-input" id="check2-label">
+          <input id="check2-input" type="checkbox" name="checkbox1" value="2">Memory usage</label>
+          </div>
+
+          <div>
+            <label for="check3-input" id="check3-label">
+          <input id="check3-input" type="checkbox" name="checkbox1" value="3">UI functionality</label>
+          </div>
+        </div>
+
+        <div id="checkbox-right">
+          <div id="temp4">
+            <label for="check4-input" id="check4-label">
+          <input id="check4-input" type="checkbox" name="checkbox1" value="4">Plugin support</label>
+          </div>
+
+          <div>
+            <label for="check5-input" id="check5-label">
+          <input id="check5-input" type="checkbox" name="checkbox1" value="5">Configurability</label>
+          </div>
+
+          <div>
+            <label for="check6-input" id="check6-label">
+          <input id="check6-input" type="checkbox" name="checkbox1" value="6">UI Aesthetics</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset id="comments-fieldset">
+        <legend id=textarea-label>Comments</legend>
+        <textarea rows="10" cols="53" maxlength="500">
+    </textarea>
+      </fieldset>
+
+      <div>
+        <button id="submit" type="submit">SUBMIT ALL</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
