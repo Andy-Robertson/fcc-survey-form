@@ -1,3 +1,3 @@
-# fcc-survey-form
+# survey-form
 
-freeCodeCamp responsive web design certification - project 2
+Responsive survey form.
